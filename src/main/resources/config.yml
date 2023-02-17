@@ -1,0 +1,51 @@
+# GPTMotd Configuration Made By SuperMax_8
+# https://www.spigotmc.org/members/supermax_8.479560/
+# https://pyritemc.fr
+
+# Wiki: https://supermax-8.gitbook.io/gptmotd/
+# Support Discord: https://discord.gg/PUnTJHThxJ
+
+# Could be: TIME OR FOREACH
+# TIME = the motd will change every x ticks
+# FOREACH = the motd will change every time a player refreshes the motd
+mode: time
+
+# The minimum time in seconds between each motd change (default minimum 5)
+time: 5
+# Random coeff to ajust the time between each motd change if randomCoeff is 3 each update try you will have a 1/3 chance to update the motd
+random: 3
+
+# Your api key from https://openai.com/ account
+api-key: "YOUR API KEY"
+
+# You can create multiple "prompt" with different settings and put it in the motd everywhere you want
+# to add a prompt to the motd just put in clear the id of the prompt you want to add
+prompts:
+  exemple:
+    # OPTIONAL the gpt model to use (default "text-davinci-003")
+    # List of models (Best to worst so also Slower to faster but in this case it's not really important)):
+    # text-davinci-003
+    # text-curie-001
+    # text-babbage-001
+    # text-ada-001
+    # Check https://platform.openai.com/docs/models/gpt-3 and https://openai.com/api/pricing/ for more information
+
+    model: text-curie-001
+    # OPTIONAL Maximum characters in a prompt
+    max-character-length: 100
+    # OPTIONAL Maximum tokens that gpt will use
+    max-tokens: 10
+    # OPTIONAL The prompt send to gpt, {0} = the placeholder/idea for one of the prompts
+    # Can also be a list of prompts (see below) in this case it will be the possible direct prompt to gpt so don't use "prompt:"
+    # custom-prompt:
+    #   - "A short MOTD (minecraft) for a server mmorpg:"
+    #   - "The best minecraft server MOTD:"
+    custom-prompt: "A short phrase about {0}:"
+    # The ideas that will be used to generate the prompt
+    prompt:
+      - "3 words to describe a great warrior"
+      - "A short phrase to be a warrior"
+
+motd:
+  - "&7[&#4287f5YOUR SERVER&7]"
+  - "&7exemple"

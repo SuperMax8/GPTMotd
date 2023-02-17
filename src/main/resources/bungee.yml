@@ -1,0 +1,4 @@
+name: GPTMotd
+version: '${project.version}'
+main: fr.supermax_8.gptmotd.GPTMotdBungee
+description: GPTMotd is a plugin to create motd, changing randomly with ChatGPT a text AI

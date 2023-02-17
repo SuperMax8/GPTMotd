@@ -1,0 +1,14 @@
+name: GPTMotd
+version: '${project.version}'
+main: fr.supermax_8.gptmotd.GPTMotdSpigot
+description: GPTMotd is a plugin to create motd, changing randomly with ChatGPT a text AI
+api-version: 1.16
+authors: [ SuperMax_8 ]
+website: pyritemc.fr
+commands:
+    gptmotd:
+        description: GPTMotd command
+        aliases: [ gptm, motd ]
+        usage: /gptmotd
+        permission: gptmotd.command
+        permission-message: "&cYou don't have the permission to use this command"
