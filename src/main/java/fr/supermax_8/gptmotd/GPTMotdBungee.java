@@ -27,6 +27,7 @@ public final class GPTMotdBungee extends Plugin implements Listener {
     @Override
     public void onEnable() {
         instance = this;
+        new MetricsBungee(this, 17742);
         getDataFolder().mkdirs();
         this.getProxy().getPluginManager().registerCommand(this, new Command());
         File f = new File(getDataFolder(), "config.yml");

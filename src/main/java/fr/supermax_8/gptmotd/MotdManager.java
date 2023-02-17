@@ -36,6 +36,7 @@ public class MotdManager {
 
     public MotdManager(File configFile, Consumer<Runnable> runAsync) {
         instance = this;
+
         this.runAsync = runAsync;
         CrossConfiguration config = CrossConfiguration.loadConfiguration(configFile);
         List<String> keys = config.getKeys(false);

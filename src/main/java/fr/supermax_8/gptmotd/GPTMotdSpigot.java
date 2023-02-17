@@ -23,6 +23,7 @@ public class GPTMotdSpigot extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         instance = this;
+        new Metrics(this, 17742);
         saveDefaultConfig();
         try {
             ConfigUpdater.update(this::getResource, "config.yml", new File(getDataFolder(), "config.yml"));
