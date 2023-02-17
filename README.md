@@ -10,5 +10,5 @@ Dependency OpenAI API so you need to get an api-key to use the plugin, using the
 Wiki: https://supermax-8.gitbook.io/gptmotd/
 
 
-https://builtbybit.com/resources/gptmotd.27192/
+https://builtbybit.com/resources/gptmotd.27192/   
 https://www.spigotmc.org/resources/gptmotd.108066/
